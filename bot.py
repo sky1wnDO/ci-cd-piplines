@@ -6,7 +6,7 @@ def hello(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(f'Hello {update.effective_user.first_name}')
 
 
-updater = Updater('5177594640:AAFOIbZ5xQfP33M6f80M146PSCRadW40I7Q')
+updater = Updater()
 
 updater.dispatcher.add_handler(CommandHandler('hello', hello))
 
